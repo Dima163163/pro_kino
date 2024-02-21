@@ -1,0 +1,45 @@
+.trailers {
+  padding: 60px 0 120px;
+}
+
+.trailers__buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding-bottom: 16px;
+
+}
+
+.trailers__button {
+  padding: 14px 20px;
+  background-color: #272928;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.trailers__button_active {
+  background: #ff3d00;
+}
+
+.trailers__button:focus,
+.trailers__button:hover {
+  background-color: #ff521b;
+}
+
+.trailers__wrapper {
+  position: relative;
+  padding-bottom:  56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.trailers__video {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,36 @@
+.hero {
+  background: linear-gradient(180.00deg, rgba(0, 0, 0, 0) 52.716%,rgba(0, 0, 0, 0.76) 65.309%),url('../img/avatar.png');
+  padding-bottom: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__conatainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 476px;
+}
+
+.hero__banner {
+  margin-bottom: 2px;
+  max-width: 795px;
+}
+
+.hero__date {
+  color: #ff3d00;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.hero__arrow {
+  border-radius: 50%;
+}
+
+.hero__arrow:hover {
+  background: #ffffff1a;
+}

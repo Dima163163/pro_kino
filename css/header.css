@@ -1,0 +1,40 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header__logo {
+
+}
+
+.header__link {
+  border-radius: 52px;
+  background-color: #ff3d00;
+  padding: 14px 20px 14px 20px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.header__link:hover {
+  background-color: #FF521B;
+}
+
+.header__link:focus {
+  background-color: #FF521B;
+  border-color: #ffffff;
+}

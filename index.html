@@ -4,13 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      background-color: black;
-      color: white;
-    }
-  </style>
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="icon" type="image/svg+xml" href="img/icon.png">
+  <link rel="icon" type="image/svg+xml" href="img/icon.svg">
   <title>ПРО КИНО - Аватар: Легенда об Аанге</title>
 </head>
 
@@ -24,6 +20,7 @@
   <main class="main">
     <section class="hero">
       <div class="container hero__conatainer">
+        <h1 class="visually-hidden">Сериал от Netflix: Аватар: Легенда об Аанге - выход 22 февраля</h1>
         <img class="hero__banner" src="img/banner.png" alt="Avatar the last aurbender">
         <p class="hero__date">
           <time datetime="2024-02-22">22 февраля</time>
@@ -40,32 +37,45 @@
     </section>
     <section class="about">
       <div class="container about__container">
-        <div class="about__column">
-          <h1 class="about__title">Аватар: Легенда об Аанге</h1>
-          <p class="about__description">Сюжет рассказывает о мальчике из племени воздушных кочевников, Аанге, способном
-            покорять стихию воздуха. В возрасте 11 лет, он узнал, что он Аватар — властелин четырёх стихий. Мир погряз
-            в многолетней войне нации Огня против остального мира, в котором определённые люди способны покорять одну
-            из четырёх стихий — воду, землю, огонь или воздух. Аанг — единственный, кто способен покорить все элементы
-            и будучи Аватаром, он должен спасти мир от уничтожения нацией Огня. Со своими новыми друзьями, Катарой
-            и Соккой, Аанг отправляется овладевать стихиями, попутно их преследует изгнанный принц нации Огня — Зуко,
-            который хочет вернуть себе честь, поймав Аватара.</p>
+        <div class="about__content">
+          <h1 class="visually-hidden">Аватар: Легенда об Аанге - о сериале</h1>
+          <h2 class="about__title">Аватар: Легенда об&nbsp;Аанге</h2>
+          <p class="about__description">
+            Сюжет рассказывает о&nbsp;мальчике из&nbsp;племени воздушных кочевников, Аанге,
+            способном
+            покорять стихию воздуха. В&nbsp;возрасте 11&nbsp;лет, он&nbsp;узнал, что он&nbsp;Аватар&nbsp;&mdash;
+            властелин четырёх стихий. Мир погряз
+            в&nbsp;многолетней войне нации Огня против остального мира, в&nbsp;котором определённые люди способны
+            покорять одну
+            из&nbsp;четырёх стихий&nbsp;&mdash; воду, землю, огонь или воздух. Аанг&nbsp;&mdash; единственный, кто
+            способен покорить все элементы
+            и&nbsp;будучи Аватаром, он&nbsp;должен спасти мир от&nbsp;уничтожения нацией Огня. Со&nbsp;своими новыми
+            друзьями, Катарой
+            и&nbsp;Соккой, Аанг отправляется овладевать стихиями, попутно их&nbsp;преследует изгнанный принц нации
+            Огня&nbsp;&mdash; Зуко,
+            который хочет вернуть себе честь, поймав Аватара.
+          </p>
         </div>
-        <div class="about__column">
-          <img class="about__img" src="img/about.png" alt="Аватар: Легенда об Аанге">
-        </div>
+        <picture class="about__pic">
+          <source srcset="img/aang1024.jpg" media="(max-width: 1024px)">
+          <source srcset="img/aang768.jpg" media="(max-width: 768px)">
+          <source srcset="img/aang320.jpg" media="(max-width: 320px)">
+          <img class="about__image" src="./img/aang.jpg" alt="Аанг на Аппе">
+        </picture>
       </div>
     </section>
     <section id="trailers" class="trailers">
       <div class="container">
-        <ul class="trailer__button">
+        <ul class="trailers__buttons">
           <li class="trailers__item-button">
-            <button class="button trailer__button trailer__button_active">трейлер 1</button>
+            <button class="button trailers__button trailers__button_active" aria-label="Первый трейлер">трейлер
+              1</button>
           </li>
           <li class="trailers__item-button">
-            <button class="button trailer__button">трейлер 2</button>
+            <button class="button trailers__button" aria-label="Первый трейлер">трейлер 2</button>
           </li>
           <li class="trailers__item-button">
-            <button class="button trailer__button">трейлер 3</button>
+            <button class="button trailers__button" aria-label="Первый трейлер">трейлер 3</button>
           </li>
         </ul>
         <ul class="trailers__list">
@@ -89,7 +99,7 @@
           <a class="footer__link" href="#">Dmitriy Khlopov</a>
         </li>
       </ul>
-      <p class="footer__copyright">© ПРОКИНО, 2024</p>
+      <p class="footer__copyright">&copy;&nbsp;ПРОКИНО, 2024</p>
       <img class="footer__logo" src="img/logo.svg" alt="Логотип про кино">
     </div>
   </footer>

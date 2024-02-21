@@ -1,0 +1,40 @@
+.footer {
+  padding: 40px 0;
+  background: #101010;
+  line-height: 1.4;
+}
+
+.footer__container {
+  display: grid;
+  gap: 36px;
+  grid-template-areas: 
+  "developers logo"
+  "copyright logo";
+}
+
+.footer__developers {
+  grid-area: developers;
+}
+
+.footer__link {
+  margin-bottom: 7px;
+}
+
+.footer__link:hover {
+  color: #ff521b;
+}
+
+.footer__link:last-child {
+  margin-bottom: 0;
+}
+
+.footer__copyright {
+  grid-area: copyright;
+}
+
+.footer__logo {
+  width: 287px;
+  grid-area: logo;
+  justify-self: end;
+  align-self: end;
+}
