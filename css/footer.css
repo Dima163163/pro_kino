@@ -38,3 +38,24 @@
   justify-self: end;
   align-self: end;
 }
+
+@media(max-width: 900px) {
+  .footer__logo {
+    width: 217px;
+  }
+}
+
+@media(max-width: 620px) {
+  .footer__container {
+    gap: 24px;
+    grid-template-areas: 
+    "logo"
+    "developers"
+    "copyright";
+  }
+
+  .footer__logo {
+    justify-self: start;
+    align-self: flex-start;
+  }
+}

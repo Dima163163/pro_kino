@@ -1,3 +1,6 @@
+:root {
+  scroll-behavior: smooth;
+}
 
 html {
   position: relative;
@@ -94,4 +97,17 @@ iframe {
   max-width: 1432px;
   padding: 0 66px;
   margin: 0 auto;
+}
+
+
+@media(max-width: 900px) {
+  .container {
+    padding: 0 44px;
+  }
+}
+
+@media(max-width: 620px) {
+  .container {
+    padding: 0 16px;
+  }
 }

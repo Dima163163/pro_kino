@@ -14,11 +14,7 @@
   padding-bottom: 24px;
 }
 
-.header__logo {
-
-}
-
-.header__link {
+.link-show-trailer {
   border-radius: 52px;
   background-color: #ff3d00;
   padding: 14px 20px 14px 20px;
@@ -30,11 +26,46 @@
   outline: none;
 }
 
-.header__link:hover {
+.link-show-trailer:hover {
   background-color: #FF521B;
 }
 
-.header__link:focus {
+.link-show-trailer:focus {
   background-color: #FF521B;
   border-color: #ffffff;
+}
+
+.header__link {
+  display: block;
+}
+
+@media(max-width: 900px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .header__logo {
+    width: 130px;
+  }
+}
+
+@media(max-width: 620px) {
+  .header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .header__logo {
+    width: 80px;
+  }
+
+  .header__link {
+    display: none;
+  }
+
+  .link-show-trailer {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
 }
