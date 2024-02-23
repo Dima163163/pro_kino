@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="preload" href="fonts/inter-v13-cyrillic_latin-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-v13-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" type="image/svg+xml" href="img/icon.png">
   <link rel="icon" type="image/svg+xml" href="img/icon.svg">
+  <script src="js/index.js" defer></script>
   <title>ПРО КИНО - Аватар: Легенда об Аанге</title>
 </head>
 
@@ -69,24 +72,20 @@
       <div class="container trailers__container">
         <ul class="trailers__buttons">
           <li class="trailers__item-button">
-            <button class="button trailers__button trailers__button_active" aria-label="Первый трейлер">трейлер
+            <button class="button trailers__button trailers__button_active" aria-label="Первый трейлер"
+              data-src="https://www.youtube.com/embed/ByAn8DF8Ykk">трейлер
               1</button>
           </li>
           <li class="trailers__item-button">
-            <button class="button trailers__button" aria-label="Первый трейлер">трейлер 2</button>
+            <button class="button trailers__button" aria-label="Второй трейлер"
+              data-src="https://www.youtube.com/embed/waJKJW_XU90">трейлер 2</button>
           </li>
           <li class="trailers__item-button">
-            <button class="button trailers__button" aria-label="Первый трейлер">трейлер 3</button>
+            <button class="button trailers__button" aria-label="Третий трейлер"
+              data-src="https://www.youtube.com/embed/Cw12Dat8bkE">трейлер 3</button>
           </li>
         </ul>
-        <ul class="trailers__list">
-          <li class="trailers__item">
-            <div class="trailers__wrapper">
-              <iframe class="trailers__video" src="https://www.youtube.com/embed/ByAn8DF8Ykk"
-                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </li>
-        </ul>
+
       </div>
     </section>
   </main>
